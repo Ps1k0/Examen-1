@@ -1,45 +1,92 @@
 .background {
-  background: url(fondo.jpg);
-  background-size: 100% 100%;
-  table-layout: fixed;
-  border-spacing: 0;
+    background: url(fondo.jpg);
+    background-size: 100% 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+.container {
+    position: absolute;
+    background: #222;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.preloader {
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.1)
+}
+
+.preloader:before {
+    content: "";
+    position: absolute;
+}
+
+.preloader p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boton_personalizado {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.boton_personalizado:hover {
+    color: #1883ba;
+    background-color: #ffffff;
 }
 
 .background td {
-  padding: 0;
+    padding: 0;
 }
 
 .lava {
-  background: rgb(255, 102, 0);
+    background: rgb(255, 102, 0);
 }
 
 .wall {
-  background: rgb(146, 146, 146);
+    background: rgb(146, 146, 146);
 }
 
 .actor {
-  position: absolute;
+    position: absolute;
 }
 
 .coin {
-  background: rgb(241, 205, 89);
+    background: rgb(241, 205, 89);
 }
 
 .player {
-  background: rgb(0, 153, 255);
+    background: rgb(0, 153, 255);
 }
 
 .game {
-  overflow: hidden;
-  max-width: auto;
-  max-height: auto;
-  position: relative;
+    overflow: hidden;
+    max-width: auto;
+    max-height: auto;
+    position: relative;
 }
 
 .lost .player {
-  background: rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
 }
 
 .won .player {
-  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+    box-shadow: -4px -7px 8px white, 4px -7px 8px white;
 }
