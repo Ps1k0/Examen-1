@@ -1,24 +1,45 @@
-.background    { background: rgb(52, 166, 251);
-                 table-layout: fixed;
-                 border-spacing: 0;   }
-.background td { padding: 0;          }
-.lava          { background: rgb(255, 100, 100); }
-.wall          { background: white;   }
+.background {
+  background: url(fondo.jpg);
+  background-size: 100% 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+}
 
-.actor  { position: absolute;  }
-.coin   { background: rgb(241, 229, 89); }
-.player { background: rgb(64, 64, 64); }
+.background td {
+  padding: 0;
+}
+
+.lava {
+  background: rgb(255, 102, 0);
+}
+
+.wall {
+  background: rgb(146, 146, 146);
+}
+
+.actor {
+  position: absolute;
+}
+
+.coin {
+  background: rgb(241, 205, 89);
+}
+
+.player {
+  background: rgb(0, 153, 255);
+}
 
 .game {
   overflow: hidden;
-  max-width: 600px;
-  max-height: 450px;
+  max-width: auto;
+  max-height: auto;
   position: relative;
 }
 
 .lost .player {
-  background: rgb(160, 64, 64);
+  background: rgb(255, 0, 0);
 }
+
 .won .player {
   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
 }
