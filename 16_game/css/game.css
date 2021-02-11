@@ -30,10 +30,10 @@
 }
 
 .game {
-    overflow: hidden;
+    overflow: auto;
     max-width: auto;
     max-height: auto;
-    position: relative;
+    position: bottom;
 }
 
 .lost .player {
