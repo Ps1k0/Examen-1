@@ -30,10 +30,10 @@
 }
 
 .game {
-    overflow: auto;
+    overflow: hidden;
     max-width: auto;
     max-height: auto;
-    position: bottom;
+    position: relative;
 }
 
 .lost .player {
@@ -46,6 +46,7 @@
 
 .boton_personalizado {
     text-decoration: none;
+    font-family: Arial;
     padding: 10px;
     font-weight: 600;
     font-size: 20px;
@@ -55,12 +56,6 @@
     border: 2px solid #0016b0;
 }
 
-.boton_personalizado:hover {
-    color: #1883ba;
-    background-color: #ffffff;
-}
-
-html,
 body {
     margin: 0;
     padding: 0;
@@ -68,14 +63,6 @@ body {
     height: 100vh;
     font-family: "Monument Extended";
     background: #ffffff;
-}
-
-h1 {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #101010;
 }
 
 body {
@@ -86,7 +73,7 @@ body {
 .pace {
     pointer-events: none;
     user-select: none;
-    z-index: 2000;
+    z-index: 10000;
     position: fixed;
     margin: auto;
     top: 0;
@@ -121,15 +108,18 @@ body {
 
 #preloader {
     width: 100%;
+    font-family: Arial;
     height: 100vh;
     background: #101010;
     overflow: hidden;
     position: fixed;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 10000;
 }
 
 .p {
     position: absolute;
+    font-size: 30px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
